@@ -1,0 +1,69 @@
+https://github.com/krahul2024/ayu.git
+git remote add origin https://github.com/krahul2024/ayu.git
+git branch -M main
+git push -u origin main
+github token
+
+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
+
+
+1.nodejs can be connected with database but javascript can't be connected with database.
+2.used for apis and server side programming.
+3. apis are the main guys which connect frontend with database.
+4.runs on v8 engine.
+5. we get undefined in console or terminal that is cuz we have not defined anything or it doesnt return anything properly.
+6.console.log in nodejs is not same as js console.log it is built same and used for debugging.
+7.....core modules..
+ global and non-global:-> console http fs buffer.
+ read about these modules from mdn or node website
+ 
+8.package.json file???????????????????
+it keeps details related to project everything from commands, modules,packages and all. builds of projects and how to run how to test. basically all details related to code.
+while installing modules in packages.json file we see that it has dependencies section after addition of package.it also keeps logs.
+check npm i colors
+npm i logs
+
+package.json file == project if deleted then project is fucked.
+is nodejs single threaded?
+it runs one command at once.
+if module folder is deleted then it is regenerated once package.json file is run.
+whenever a project is pushed then we also push .gitignore file to ignore the upload of node_modules as their size becomes very large.
+...nodemon :-> it runs continuously our project which saves time and we don't have to run ourselves the code everytime a change is made.to keep it refreshing automatically we have to once run using :-> nodemon ./filename.js.
+
+
+APIs:-> these are messenger b/w two servers having req and response;
+
+endpoint:- it is the url which needs to be called as we have to access some data from a server
+paths:- suppose there are various categories of services , then if we use just endpoint then there might be errors so to solve this we have to add paths in endpoint.
+parameters and authentication....
+
+https://api.openweathermap.org/data/2.5/weatherq=Bettiah&appid=b993c78930157b0d151cfa44bb45a982
+
+http://openweathermap.org/img/wn/01n@2x.png
+//api keys
+openweather: b993c78930157b0d151cfa44bb45a982
+mailchimp: 8b785079a4120cf0707bffc2798426b6-us10  , 6a3917b568d7c0381e4136707df5ae4d-us10
+mailchimp audience id : 698adb0d6e
+
+"https://$API_SERVER.api.mailchimp.com/3.0/lists/$list_id/members"
+
+
+
+
+
+
+
+
+
+
+
+
+
+//TEMPLATING :-
+let's say that we have a blog and we have to display several pages according to the situations 
+then it will be problematic to make a hell lot of HTML files for each response so to avoid this bakchodi we use a concept called templating in which we create a template file and use  it by making changes according to our needs. also foe handling multiple if statements
+
+
+how to add an error page using nodejs and any templating engines?
+
+

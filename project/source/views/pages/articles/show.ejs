@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blog</title>
+	<!-- this is for bootstrap and styling -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<!-- body begins -->
+<body>
+	<!-- navigation bar code from here bro -->
+
+	<!-- display of the concerned article from here -->
+	<div class="container">
+		<a href="/articles"><button class="btn btn-secondary">All Articles</button></a>
+		<a href="./edit/<%=article._id%>"><button class="btn btn-secondary btn-success" >Edit this article</button></a>
+		<h1 class="mb-2"> <%= article.problemTitle%> </h1>
+		<p class="text-muted"><%=article.problemCreationTime%></p>
+		<h2> Problem Statement</h2>
+		<h4><%=article.problemStatement%> </h4>
+		<h4>Approach </h4>
+		<p><%=article.problemApproach%></h4>
+		<h4>Solution </h4>
+		<p><%=article.problemSolution%></p>
+		<h4>Code </h4>
+		<p> <%=article.problemCode%> </p>
+	</div>
+
+
+
+<!-- this is for the bootstrap and styling -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+	<%-include('./boott.ejs')%>
+</head>
+<body>
+	<div class="container mt-1">
+		
+
+<form action="/user/registerUser" method="POST">
+
+	<div class="form-group mb-1 col-auto">
+		<label for="name">Name</label>
+		<input type="text" name="name" class="form-control w-25">
+		</div>
+	<div class="form-group mb-1 col-auto">
+		<label for="username">Username</label>
+		<input type="text" name="username" class="form-control w-25">
+		</div>
+	<div class="form-group mb-1 col-auto">
+		<label for="password">Password</label>
+		<input type="password" name="password" class="form-control w-25">
+		</div>
+	<div class="form-group mb-1 col-auto">
+		<label for="email">E-mail</label>
+		<input type="email" name="email" class="form-control w-25">
+		</div>
+	<button name="submit" type="submit" class="btn btn-outline-secondary">Add me</button>
+	<a href="/user" class="btn btn-outline-success" >Leave it</a>
+	<a href="/user/login" class="btn btn-outline-dark">Login</a>
+
+</form>
+	</div>
+
+<%-include('./bootb.ejs')%>
+</body>
+</html>

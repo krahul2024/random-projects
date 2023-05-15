@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+	<%-include('./boott.ejs')%>
+</head>
+<body>
+
+ <div class="container mt-2">
+	<%if(value.name!=null){%>
+	<h4>Hello <%=value.name%></h4>
+	<a href="/user/logout" class="btn btn-outline-dark">Logout</a>
+	<%}else if(value.email==null){%>
+	<a href="/user/login" class="btn btn-outline-dark">Login</a>
+	<a href="/user/register" class="btn btn-outline-dark">Register</a>
+	<%}%>
+
+ </div>
+
+<%-include('./bootb.ejs')%>
+</body>
+</html>

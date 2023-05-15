@@ -1,0 +1,7 @@
+body{
+	background-color:lightgray;
+}
+.slider-image{
+	height: 400px !important;
+	object-fit: cover;
+}

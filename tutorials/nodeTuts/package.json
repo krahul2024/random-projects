@@ -1,0 +1,25 @@
+{
+  "name": "firstnodejs",
+  "version": "1.0.0",
+  "description": "my first package.json file creation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krahul2024/dev.git"
+  },
+  "keywords": [
+    "packageJson"
+  ],
+  "author": "Rahul Kumar Sah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krahul2024/dev/issues"
+  },
+  "homepage": "https://github.com/krahul2024/dev#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}

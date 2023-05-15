@@ -1,0 +1,26 @@
+<div class="form-group">
+	<label for="title">Title of the Problem/Article</label>
+	<input value="<%=article.problemTitle%>" type="text" name="title" id="title" class="form-control" required>
+</div>
+<div class="form-group">
+	<label for="title">Problem Statement or Topic Details</label>
+	<input value="<%=article.problemStatement%>" type="text" name="statement" id="title" class="form-control" required>
+</div>
+<div class="form-group">
+	<label for="title">Concerned Topics</label>
+	<input value="" type="text" name="topics" id="topics" class="form-control" >
+</div>
+<div class="form-group">
+	<label for="description">Approach or Idea</label>
+	<textarea type="text" class="form-control" name="approach" id="approach"><%=article.problemApproach%> </textarea>
+</div>
+<div class="form-group">
+	<label for="markdown">Solution/Description</label>
+	<textarea type="text" class="form-control" name="solution" id="solution" ><%=article.problemSolution%> </textarea>
+</div>
+<div class="form-group">
+	<label for="markdown">Code</label>
+	<textarea type="text" class="form-control" name="code" id="code"><%=article.problemCode%> </textarea>
+</div>
+<a href="/articles" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>

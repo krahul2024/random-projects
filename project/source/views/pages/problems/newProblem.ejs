@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add a problem</title>
+
+	<!-- this is included for bootstrap styles -->
+	<%-include('../../partials/bootstrapTop.ejs')%>
+
+	  </head>
+<body>
+	<div class="container">
+<h3>Add a Problem</h3>
+<form method="POST" action="/problems">
+	<div class="form-group">
+	<label for="title">Title of the Problem</label>
+	<input value="" type="text" name="title" id="title" class="form-control" required>
+</div>
+<div class="form-group">
+	<label for="link">Link of the problem or problem source</label>
+	<input value="" type="text" name="link" id="title" class="form-control">
+</div>
+<div class="form-group">
+	<label for="solution">Link for the solution of the problem(if available)</label>
+	<input value="" type="text" name="solution" id="title" class="form-control">
+</div>
+
+<!-- for selecting multiple topics from the user -->
+<!-- <div class="container mt-5"> -->
+	<h4>Select the concerned topics.</h4>
+  <select name="topics" class="selectpicker py-2 mb-1" multiple aria-label="size 4 select example">
+  	<!-- [ '1', '2', '3', '4', '6', '7' ] , something like this will be sent to post request -->
+    <%for(i=0;i<topicList.list.length;i++){%>
+      <!-- <input type="text" name="topicName"> -->
+    <option value="<%=topicList.list[i].name%>" ><%=topicList.list[i].name%></option>
+    <%}%>
+  </select>
+<!-- </div> -->
+
+<!-- this is for saving or cancelling the addition of a new problem  -->
+<a href="/problems" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
+</form>
+</div>
+<!-- this is included for bootstrap styles -->
+<%-include('../../partials/bootstrapBottom.ejs')%>
+</body>
+</html>

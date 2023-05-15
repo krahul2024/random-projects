@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>User Login</title>
+	<%-include('./boott')%>
+</head>
+<body>
+	<div class="container mt-1">
+	
+	<h4>Enter details</h4>
+	<form method="POST" action="/user/loginUser">
+		<div class="form-group mb-1 col-auto">
+		<label for="username">User Name</label>
+		<input type="text" name="username" class="form-control w-25">
+		</div>
+
+		<div class="form-group mb-1 col-auto mb-3">
+		<label for="username">Password</label>
+		<input type="password" name="password" class="form-control w-25">
+		</div>
+		<input type="submit" class="btn btn-outline-info" name="normal" value="Let me in">
+		<a class="btn btn-outline-success" href="/user/register" >Register</a>
+		<a href="/user" class="btn btn-outline-success">Leave it</a>
+		<a href="/user/login_using_google" class="btn btn-outline-info ">Sign in using Google</a>
+	</form>
+
+
+</div>
+<%-include('./bootb')%>
+</body>
+</html>

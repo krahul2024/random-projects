@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- about doctype:- this is for which type of document it is and can tell about versions of html -->
+<!-- there are diff types of doctype like mathML and svg for maths and graphics -->
+<html>
+
+<head>
+    <!-- this part is only for browser -->
+    <title>revision</title>
+</head>
+
+<body>
+    <!-- this part is visible to user -->
+    <!-- elements-> anything like para links images video or anything is element
+    any info about that elment is attribute  -->
+    <!-- for element declaration we use tags opening and closing  <tag attribute(s)...=value(s)....>content</tag>-->
+    <p height="10px">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Rem optio neque doloremque vel maiores tempore eveniet nobis porro in, quisquam,
+        odio necessitatibus itaque voluptate ex. Optio enim repudiandae illum sapiente.
+        <br>
+        <!-- bold and i tags are just for viewing but strong and em tags put strong values in text -->
+        Lorem <mark> ipsum dolor sit amet consectetur </mark> <del> elit. </del>, quidem! Delectus ipsum nemo
+        reprehenderit
+        nam error praesentium a numquam facilis quas suscipit nulla modi, optio expedita aut repudiandae, nihil eaque.
+        <!-- pre tag for para to look as it is -->
+        <br><br><br>
+        x<sub>2</sub><!--  subscript -->
+        <br>
+        x<sup>1/3</sup><!--  postscript -->
+        <!-- quotation and citation -->
+        <br>
+        <q>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto neque pariatur at dolor ab facilis
+            totam, iste corporis est possimus repellat rerum autem adipisci iure culpa, minima consequuntur maiores
+            quam.</q>
+        <br>
+    <blockquote cite="https://www.abc.com">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        architecto autem id eaque
+        obcaecati dolor eum aliquam non aliquid sapiente iure, quia atque veritatis nulla, assumenda debitis? Quo, magni
+        nulla.</blockquote>
+    <br>
+    <abbr title="World Health Organization">WHO</abbr> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vel
+    sed, deleniti dolorum, ab perferendis pariatur a, in quae quidem nihil atque aspernatur debitis cupiditate tenetur
+    nam nisi. Eaque, deleniti.
+    <br>
+    <cite>Subtle art of not giving a fuck</cite> is written by abc..
+    <br>
+    <br>
+    <!-- local links meaning when we click on a webpage then we are directed to anothe section of the same webpage we do it by using ids as links -->
+    <a href="#localLink">Local link</a>
+    <br>
+    <br>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat itaque quae et dolorem aliquam quod, odit
+    repudiandae! Accusantium
+    laboriosam hic tempora quibusdam quam dolor dolorem sint, pariatur non quae quaerat! Lorem ipsum dolor,
+    sit amet consectetur adipisicing elit.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsa enim obcaecati provident vel, soluta
+    sequi voluptatum impedit optio distinctio quidem ducimus corporis doloribus ex neque cumque eius iusto? Doloremque.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dicta, sunt veritatis quasi n
+    ulla nesciunt illo nemo placeat suscipit. Ut repellendus quibusdam dolore rem ad ducimus sunt est distinctio.
+    Architecto.
+    <br><br><br><br>
+     <br>
+    <!-- email links -->
+    <p>contact me at <a href="mailto:csb20045@tezu.ac.in"> csb20045@tezu.ac.in</a></p>
+    <br>
+    <!-- images it is an empty tag and it requires a source namely src tag -->
+    <img src="../images/emage.jpg" height="400px">
+    <!-- empty tags <br> <hr> <img> -->
+    <br>
+    <!-- links  using anchor tags in links to open a particulr link in another tab we use without quotes-> "target=_blank" 
+        title="value" is used for hinting the element we are using
+    -->
+    <a href="https://codeforces.com/" target="_blank" title="Go to codeforces.com">Codeforces</a>
+    <br>
+    <!-- marquee tag depricated nowadays instead used using css-->
+    <marquee behavior="" direction="down">moving text</marquee> <!-- text moves to down if specified jkl then text will move from 
+    opp dirn of jkl to jkl dirn-->
+    <br>
+    <!-- lists in html ordered lists and unordered lists using ol and ul resp. -->
+    <h4>in ordered list by default numbering starts from 1 but we can change from which type or number to start</h2>
+    <ol type="A">
+        <li>
+            abc
+        </li>
+        <li>jkl</li>
+        <li>def</li>
+    </ol>
+    <ol type="a">
+        <li>
+            abc
+        </li>
+        <li>jkl</li>
+        <li>def</li>
+    </ol>
+    <ol type="I">
+        <li>
+            abc
+            <ol start="10">
+                <li>jdi</li>
+                <li>firen</li>
+                <li>iueui</li>
+            </ol>
+        </li>
+        <li>jkl</li>
+        <li>def</li>
+    </ol>
+    <ol type="i">
+        <li>
+            abc
+        </li>
+        <li>jkl</li>
+        <li>def</li>
+    </ol>
+    <h4>unordered list</h4>
+    <ul>
+        <li>cba
+            <ul>
+                <li>jdk</li>
+                <li>fnjwo</li>
+            </ul>
+        </li>
+        <li>fed</li>
+        <li>jih</li>
+    </ul>
+     <ul style="list-style-type:square ;"><!-- square or circle or disc or none-->
+        <li>cba
+            <ul>
+                <li>jdk</li>
+                <li>fnjwo</li>
+            </ul>
+        </li>
+        <li>fed</li>
+        <li>jih</li>
+    </ul>
+    <h4>Description list</h4>
+    <dl>
+        <dt>abc</dt>
+        <dd>->this is description of abc</dd>
+        <dt>def</dt>
+        <dd>->this is description of def</dd>
+    </dl>
+    <!-- in tables we can use images or anchor tags also,  learn to use rowspan and colspan in tables it is very imp ,also learn nested tables-->
+    <table border="10px">
+        <caption>Name of the table</caption>
+        <thead style="color: orange;">
+            <tr>
+            <th>abcOdd</th>
+            <th>abcEven</th>
+        </tr>
+        </thead>
+        <tbody style="color: green;">
+            <tr>
+            <td>abc1</td>
+            <td>abc2</td>
+        </tr>
+        <tr>
+            <td>abc3</td>
+            <td>abc4</td>
+        </tr>
+        <tr>
+            <td>abc5</td>
+            <td>abc6</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <!-- div and span **most important** used for creating structures -->
+    <!-- div->block element and span ->inline element -->
+    <!-- iframes -->
+    <!-- <iframe src="https://www.opindia.com/" frameborder="100" height="100></iframe> -->
+    <!-- using audio file -->
+    <audio controls>
+        <source src="../audioFiles/Ra Ra Rakkamma - Vikrant Rona.mp3" type="audio/mpeg">
+        <!-- here we can use multiple similar audio files using types -->
+        audio file not supported!
+    </audio>
+    <video controls height="240px" width="400">
+        <source src="../videoFiles/AliensVisitEarth.mp4" type="video/mp4">
+        <!-- here we can use multiple similar video files using types -->
+        video not supported
+    </video>
+    <!-- now suppose we want to user to watch whole video and don't let user control the video then 
+    instead of control we can use autoplay -->
+    <!-- <video autoplay height="240px" width="100%">
+        <source src="../videoFiles/AliensVisitEarth.mp4" type="video/mp4">
+        video not supported
+    </video> -->
+
+    <!-- using pdfs  using embed tag, iframe and object tags -->
+    <!-- embed -->
+    <br>
+    pdf file
+    <br>
+    <!-- <embed src="../pdfs/p10306.pdf" type="application/pdf" height="500" width="500"> -->
+        <!-- using iframes -->
+    <iframe src="../pdfs/p10306.pdf" height="500" width="700">pdf dile</iframe>
+    <!-- using object -->
+    <!-- <object data="../pdfs/p10306.pdf" type="application/pdf" height="500" width="500"></object> -->
+
+    <!-- using youtube videos same thing for google map go to google map search 
+    address and in share option look for embed and then copy the code and paste that's it -->
+    <iframe width="660" height="315" src="https://www.youtube.com/embed/O7qFxAOxKuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <!-- html entities suppose we want to write <div> but in html it is reserved so there is a way lt for less than and tg for greater tahn
+         although we can use their  numbers like &#60;div&#62;-->
+        <br>
+        &lt;div&gt;
+        <!-- learn how to write  spaces in html -->
+        <br>
+        <!-- html symbols maths or any type this is also done using html entities -->
+        <!-- semantic elements-> these type of elements tell both browser and developer unlike div and span
+             which are non-semantic  examples of semantic elements are 
+             <section></section> <footer></footer><nav></nav> <aside></aside> <details></details> <main></main> <article></article>
+              <summary></summary> <figure></figure> <header></header> <figcaption></figcaption> -->
+
+            <!-- image map --
+              we can search for image map and then map image contents and generate coordinates for shapes and then 
+              embed them with links for respective things. -->
+            <img src="../images/gadgets.jpg" usemap="#image-map">
+                    <map name="image-map">
+                        <area target="_blank" alt="Laptops" title="Laptops" href="https://www.amazon.in/s/ref=mega_elec_s23_2_1_1_1?rh=i%3Acomputers%2Cn%3A1375424031&amp;ie=UTF8&amp;bbn=976392031" coords="192,90,442,283" shape="rect">
+                        <area target="_blank" alt="Phones" title="Phones" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&amp;node=1389401031&amp;ref_=nav_cs_mobiles" coords="143,250,182,324" shape="rect">
+                        <area target="_blank" alt="Headphones" title="Headphones" href="https://www.amazon.in/s?k=headphones&amp;ref=nb_sb_ss_ts-doa-p_1_7" coords="102,266,96,261,81,261,75,261,67,259,69,268,62,272,97,278,70,275,88,282,75,278,52,270,41,264,30,258,22,239,21,226,21,207,26,199,37,188,44,182,57,177,69,176,79,175,100,183,110,193,118,206,127,222,126,239,131,233,123,247,100,273,87,274" shape="poly">
+                        <area target="_blank" alt="Cameras" title="Cameras" href="https://www.amazon.in/b/?_encoding=UTF8&amp;node=1388977031&amp;ref_=sv_top_elec_mega_5" coords="462,222,512,301" shape="rect">
+                        <area target="_blank" alt="Mice" title="Mice" href="https://www.amazon.in/s?k=mouse&amp;crid=2CTH1KPZZKR0A&amp;sprefix=mous%2Caps%2C315&amp;ref=nb_sb_noss_2" coords="382,336,398,323,417,307,432,327,419,351,403,362,389,363,378,352" shape="poly">
+                    </map>
+        
+            <!-- forms and various input types in html -->
+            <form enctype="multipart/form-data">
+                <div>
+                    Text:
+                    <input type="text" autocomplete="on">
+                </div>
+                <div>
+                    Date:
+                    <input type="date">
+                </div>
+                <div>
+                    E-mail:
+                    <input type="email" autocomplete="on">
+                </div>
+                <div>
+                    Color:
+                    <input type="color">
+                </div>
+                <div>
+                    Phone:
+                    <!-- min amd max can be used with date time range and number types -->
+                    <!-- learn about autofocus and autocomplete-->
+                    <input type="number" min="6666666666" max="9999999999" required step="100">
+                </div>
+                <div>
+                    Password:
+                    <input type="password" placeholder="enter password" required>
+                </div>
+                <div>
+                    Time:
+                    <input type="time">
+                </div>
+                <div>
+                    URL:
+                    <input type="url">
+                </div>
+                <div>
+                    Range:
+                    <input type="range" min="100" max="20000">
+                </div>
+                <div>
+                    File:
+                    <!-- usign multiple for selecting multiple files o/w no need of multiple -->
+                    <input type="file" multiple>
+                </div>
+                <div>
+                    <input type="reset" value="Reset all the values">
+                </div>
+                <div>
+                    <!-- in submit we can use image instead of submit button -->
+                    <input type="submit" value="Go">
+                </div>
+
+
+            </form>
+            <!-- textarea  -->
+            <textarea name=""cols="20" rows="10" placeholder="Enter text">Hello.....</textarea>
+    <p id="localLink">Local link -> iste veniam error optio corporis! Ea autem officia q
+        uidem quaerat impedit dolorem ipsum aspernatur, beatae minus illum necessitatibus aperiam voluptatum commodi!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quos, error deserunt beatae temporibus necessi
+        tatibus sed quae fugiat voluptates. Eligendi cum molestias voluptatem, facere esse illo iusto eum debitis</p>
+    perspiciatis.
+    </p>
+   
+
+</body>
+
+</html>
